@@ -57,19 +57,41 @@
       color: #6CA489;
       text-align: center;
     }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
   </style>
 </header>
 
 <body>
   <h1><a href="products.html"><img class="product-image" src="ayos-logo.png" /></a>Ayos</h1>
-  <table class="center">
-    <tr>
-      <td class="td"><a href="home.html">Home</a></td>
-      <td class="td"><a href="services.html">Services</a></td>
-      <td class="td"><a href="branches.html">Branches</a></td>
-      <td class="td"><a href="aboutus.html">About</a></td>
-    </tr>
-  </table>
+  <div class="topnav">
+    <a href="home.html">Home</a>
+    <a class="active" href="services.html">Services</a>
+    <a href="branches.html">Branches</a>
+    <a href="aboutus.html">About</a>
+  </div>
   <br>
   <br>
 
