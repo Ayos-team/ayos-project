@@ -34,7 +34,7 @@ def contactdetails():
     return render_template('contactdetails.html', page="Contact Details")
 
 
-@app.route('/map')
+@app.route('/Map')
 def map():
     return render_template('Map.html', page="Map")
 
@@ -61,7 +61,14 @@ def paymentmethod():
 def rewards():
     return render_template('rewards.html', page="Rewards")
 
-
 @app.route('/serviceprovider')
 def serviceprovider():
     return render_template('serviceprovider.html', page="Service Provider")
+
+@app.route('/datechoosing')
+def datechoosing():
+    return render_template('datechoosing.html', page="Date Choosing")
+
+@app.route('/confirmed')
+def confirmed():
+    return render_template('confirmed.html', page="Confirmed")
